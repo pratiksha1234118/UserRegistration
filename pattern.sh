@@ -1,14 +1,11 @@
-echo User Registration System needs to ensure all validations are in place during the User Entry
-#!/bin/bash -x
-#last name
-echo "Enter your last name"
-read LName;
-pattern="^[A-Z]{1}[a-z]{2,}$";
-if [[ $LName =~ $pattern ]]
+echo "Enter your email id"
+read Email;
+pattern1="^[0-9a-zA-z]+([.][0-9A-za-z]+)*@[a-z]+.[A-Za-z]{2,4}([.][a-z]{2})*$";
+if [[ $Email =~ $pattern1 ]]
 then
-        echo "Last name is valid";
+        echo "entered email is valid";
 else
-        echo "Last name is invalid";
+        echo "entered email ids invalid";
 fi
 
 
