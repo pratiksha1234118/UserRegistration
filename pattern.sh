@@ -1,10 +1,9 @@
-echo "Enter your phone no"
-read phone;
-pattern1="^[0-9]{2}[ ][0-9]{10}$";
-if [[ $phone =~ $pattern1 ]]
+echo "Enter the Password:";
+read PASSWORD;
+pass="^[a-z]{8,}[A-Z]{1}[0-9]{1}[#$%&*^@]{1}$";
+if [[ $PASSWORD =~ $pass ]]
 then
-        echo "entered no is valid";
+echo "Password Is Valid";
 else
-        echo "entered no ids invalid";
+echo "Password Is Not Valid";
 fi
-
