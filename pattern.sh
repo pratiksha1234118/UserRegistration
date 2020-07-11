@@ -1,11 +1,10 @@
-echo "Enter your email id"
-read Email;
-pattern1="^[0-9a-zA-z]+([.][0-9A-za-z]+)*@[a-z]+.[A-Za-z]{2,4}([.][a-z]{2})*$";
-if [[ $Email =~ $pattern1 ]]
+echo "Enter your phone no"
+read phone;
+pattern1="^[0-9]{2}[ ][0-9]{10}$";
+if [[ $phone =~ $pattern1 ]]
 then
-        echo "entered email is valid";
+        echo "entered no is valid";
 else
-        echo "entered email ids invalid";
+        echo "entered no ids invalid";
 fi
-
 
